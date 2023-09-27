@@ -5,7 +5,7 @@
 //const double R0=8.3143;
 //const double M0=0.029;
 //const double Rd=8.3143/0.029;
-const char ver0[] = "0.9.9";
+const char ver0[] = "0.9.9r1";
 const char rdate[] = "September 20th, 2023";
 const char author[] = "Keehoon Kim (LLNL, kim84@llnl.gov)";
 

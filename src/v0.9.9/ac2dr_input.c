@@ -105,11 +105,11 @@ void get_grid( char *fn, fdmesh *minfo, int mrank )
                         pch2=strtok(NULL,"=");
                         minfo->R = atof(pch2)*1000.0;
                     }
-                    if(strcmp(pch2,"elev")==0) {
+                    if(strcmp(pch2,"elevMax")==0) {
                         pch2=strtok(NULL,"=");
                         minfo->elev_max = atof(pch2);
                     }
-                    if(strcmp(pch2,"angle")==0) {
+                    if(strcmp(pch2,"angleMax")==0) {
                         pch2=strtok(NULL,"=");
                         minfo->ang_global = atof(pch2);
                         minfo->angmin_global = min_ang;
@@ -412,6 +412,7 @@ void get_time( char *fn, fdmesh *minfo, int mrank, int nRank, MPI_Comm comm2 )
     double tt;
     int i;
 
+    minfo->cfl = 1.0;
     ptr_file = fopen( fn, "r" );
     if (!ptr_file) elac_error("ac2dr: cannot find the input file.\n", -1);
 
@@ -439,6 +440,11 @@ void get_time( char *fn, fdmesh *minfo, int mrank, int nRank, MPI_Comm comm2 )
                         pch2=strtok(NULL,"=");
                         minfo->T = atof(pch2);
                     }
+                    if(strcmp(pch2,"cfl")==0) {
+                        pch2=strtok(NULL,"=");
+                        minfo->cfl = atof(pch2);
+                    }
+  
                     itok++;
                     strcpy( buf2, buf );
                     pch = strtok( buf2, " \n" );
@@ -451,7 +457,7 @@ void get_time( char *fn, fdmesh *minfo, int mrank, int nRank, MPI_Comm comm2 )
     }
     fclose( ptr_file );
 
-    minfo->dt = cfl * (minfo->R*minfo->dth) / (minfo->cmax);
+    minfo->dt = minfo->cfl * (minfo->R*minfo->dth) / (minfo->cmax);
     tt=0;
     for(i=0; tt<=minfo->T; i++) {
       tt=i*minfo->dt;

@@ -1,0 +1,5 @@
+v0.9.9r1
+
+-fix
+   - GRID: changes to elevMax and angleMax from elev and angle
+   - TIME: includes CFL

@@ -99,7 +99,7 @@ typedef struct fdmesh {
     double R, elev_max, rpmin, rpmax, ang, th, dth, dr, angmin, angmax, thmin, thmax;
     double ang_global, th_global, angmin_global, angmax_global, thmin_global, thmax_global;
     //double R=6371*1000, elev_max, rpmin, rpmax, smin, smax, th, ds, dr;
-    double T, dt;
+    double T, dt, cfl;
     dvec   *ts;
     int src_num, src_num_global, sta_num, sta_num_global;
     //double phmin, phmax, thmin, thmax, rhomin, rhomax, cmin, cmax, uhmin, uhmax, whmin, whmax;
