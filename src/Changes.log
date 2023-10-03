@@ -6,3 +6,4 @@ FIX
 v0.9.9r2
 FIX
    - Add backward compatibility: input parameters for v0.9.9 now work for v0.9.9r1 and v0.9.9r2
+   - Get rid of omp.h to remove openmp dependency
