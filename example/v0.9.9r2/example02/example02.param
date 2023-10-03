@@ -1,0 +1,23 @@
+path input=./input output=./output
+grid elevMax=7000 angleMax=0.001798643 h=20 radius=637100
+time t=100
+mspeed profile=c_profile.bin format=binary
+mdensity profile=rho_profile.bin format=binary
+wind profile=w_profile.bin format=binary
+asource elev=0 angle=0 p0=1 freq=0.9 type=Gaussian
+rec name=STA01 elev=0 angle=8.993216e-05 mode=p format=binary
+rec name=STA02 elev=0 angle=1.798643e-04 mode=p format=binary
+rec name=STA03 elev=0 angle=2.697965e-04 mode=p format=binary
+rec name=STA04 elev=0 angle=3.597286e-04 mode=p format=binary
+rec name=STA05 elev=0 angle=4.496608e-04 mode=p format=binary
+rec name=STA06 elev=0 angle=5.395930e-04 mode=p format=binary
+rec name=STA07 elev=0 angle=6.295251e-04 mode=p format=binary
+rec name=STA08 elev=0 angle=7.194573e-04 mode=p format=binary
+rec name=STA09 elev=0 angle=8.093894e-04 mode=p format=binary
+rec name=STA10 elev=0 angle=8.993216e-04 mode=p format=binary
+rec name=STA11 elev=0 angle=9.892538e-04 mode=p format=binary
+rec name=STA12 elev=0 angle=1.079186e-03 mode=p format=binary
+rec name=STA13 elev=0 angle=1.169118e-03 mode=p format=binary
+rec name=STA14 elev=0 angle=1.259050e-03 mode=p format=binary
+rec name=STA15 elev=0 angle=1.348982e-03 mode=p format=binary
+image timeInterval=5.0 mode=p file=test format=binary
