@@ -144,6 +144,8 @@ void get_grid( char *fn, fdmesh *minfo, int mrank )
     minfo->thmax_global=minfo->angmax_global/180.0*M_PI;
     minfo->thmin_global=minfo->angmin_global/180.0*M_PI;
     minfo->th_global=minfo->thmax_global-minfo->thmin_global;
+    minfo->thmin = minfo->thmin_global;
+    minfo->thmax = minfo->thmax_global;
 
     if(minfo->ang==180) {
     minfo->rpmin=0.0;
