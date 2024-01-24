@@ -1,4 +1,3 @@
-#include <omp.h>
 #include "ac2dr_aux.h"
 #include "ac2dr_config.h"
 

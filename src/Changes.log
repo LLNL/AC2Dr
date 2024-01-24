@@ -10,4 +10,5 @@ FIX
 
 v0.9.9r3.1
 CHANGES
-   - binary file format: an integer field added to check an endianness
+   - binary format for input and output files: an integer field added to check an endianness
+   - legacy dependency to openMP was removed
