@@ -1,5 +1,5 @@
 path input=./input output=./output
-grid elev=78000 angle=6.0 h=400 radius=6371
+grid elevMax=78000 angleMax=6.0 h=400 radius=6371
 time t=1000.0
 mspeed 2dfile=c_2dfile_ex3.bin format=binary
 mdensity 2dfile=rho_2dfile_ex3.bin format=binary

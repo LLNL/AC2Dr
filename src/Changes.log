@@ -12,3 +12,8 @@ v0.9.9r3.1
 CHANGES
    - binary format for input and output files: an integer field added to check an endianness
    - legacy dependency to openMP was removed
+
+v0.9.9r3.2
+CHANGES
+   - ASCII format support for 2-d material files
+   - AC2Dr command (-b2a, -a2b) to convert 1-d and 2-d binary files to ASCII format
