@@ -17,3 +17,7 @@ v0.9.9r3.2
 CHANGES
    - ASCII format support for 2-d material files
    - AC2Dr command (-b2a, -a2b) to convert 1-d and 2-d binary files to ASCII format
+
+v0.9.9r3.3
+CHANGES
+   - Add AC2Dr commmand (-v) for a version display
