@@ -1,9 +1,9 @@
 path input=./input output=./output
 grid elevMax=78000 angleMax=6.0 h=400 radius=6371
 time t=1000.0
-mspeed 2dfile=c_2dfile_ex3.bin smooth=1 format=binary
-mdensity 2dfile=rho_2dfile_ex3.bin smooth=1 format=binary
-wind 2dfile=wind_2dfile_ex3.bin smooth=1 effc=0 format=binary
+mspeed 2dfile=c_2dfile_ex3.bin format=binary
+mdensity 2dfile=rho_2dfile_ex3.bin format=binary
+wind 2dfile=wind_2dfile_ex3.bin format=binary
 asource elev=0 angle=0, p0=100000 freq=0.05 type=Gaussian
 rec name=STA01 elev=0 angle=1.0 mode=p format=binary
 rec name=STA02 elev=0 angle=2.0 mode=p format=binary

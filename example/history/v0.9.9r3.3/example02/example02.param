@@ -1,9 +1,9 @@
 path input=./input output=./output
 grid elevMax=7000 angleMax=0.1798643 h=50 radius=6371
 time t=100
-mspeed value=335.1829 smooth=1
-mdensity value=1.0782 smooth=1
-wind value=0.0 smooth=1 effc=0
+mspeed profile=c_profile_ex2.bin format=binary
+mdensity profile=rho_profile_ex2.bin format=binary
+wind profile=w_profile_ex2.bin format=binary
 asource elev=0 angle=0 p0=1 freq=0.5 type=Gaussian
 rec name=STA01 elev=0 angle=8.993216e-03 mode=p format=binary
 rec name=STA02 elev=0 angle=1.798643e-02 mode=p format=binary
