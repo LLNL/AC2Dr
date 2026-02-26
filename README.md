@@ -29,6 +29,15 @@ DOCUMENTATION
 See the user guide included in the the doc folder
 
 -------------------------------------------------------------------------------
+APBuilder: Atmospheric Profile Builder
+
+[APBuilder](https://github.com/llnl/APBuilder) is a Python tool to create AC2Dr
+atmosphere profiles by downloading a weather model and making transformations
+to generate the 1D or 2D binary profile. The binary profile is used as an
+input to AC2Dr. More information on how to install and use the tool can be
+found at the [documentation page](https://software.llnl.gov/APBuilder/).
+
+-------------------------------------------------------------------------------
 LICENSE
 
 AC2Dr is distributed under the terms of the MIT license. All new contributions
